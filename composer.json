@@ -1,0 +1,23 @@
+{
+    "name": "filipgolonka/prophecy-datetime-approximate-token",
+    "description":  "DateTime approximate token allows you to write specs without 1second problem",
+    "keywords":     ["BDD", "SpecBDD", "TDD", "spec", "specification", "Prophecy"],
+    "license":      "MIT",
+    "authors": [
+        {
+            "name": "Filip Golonka",
+            "email": "filipgolonka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "FilipGolonka\\Argument\\Token\\": "src"
+        }
+    },
+    "require": {
+        "phpspec/prophecy": "^1.6"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^2.5"
+    }
+}
