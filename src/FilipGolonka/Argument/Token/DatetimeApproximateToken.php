@@ -15,12 +15,16 @@ class DatetimeApproximateToken implements TokenInterface
     }
 
     /**
-     * @param DateTime $argument
+     * @param DateTime|string $argument
      *
      * @return bool
      */
     public function scoreArgument($argument)
     {
+        if (!$argument instanceof DateTime) {
+            $argument = new DateTime($argument);
+        }
+        
         $actualTimestamp = $argument->getTimestamp();
         $expectedTimestamp = $this->value->getTimestamp();
 

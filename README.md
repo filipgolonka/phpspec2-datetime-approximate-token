@@ -18,3 +18,11 @@ Inside some example:
        $collaborator->methodAcceptedDatetime(new DatetimeApproximateToken(new \DateTime()))->shouldBeCalled();
 
 ```
+
+You can also use this token for collaborator method accepted date string:
+
+```php
+
+       $collaborator->methodAcceptedDateString(new DatetimeApproximateToken(new \DateTime()))->shouldBeCalled();
+       
+```
